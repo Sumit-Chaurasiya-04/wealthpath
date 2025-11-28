@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Data (Privacy: Do not commit the database)
+wealthpath.db
+*.csv
+!data/sample/*.csv
+*.xlsx
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage

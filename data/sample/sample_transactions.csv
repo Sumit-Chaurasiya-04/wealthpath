@@ -1,0 +1,23 @@
+date,description,amount,category
+2024-01-01,Starbucks Coffee,-5.50,Food & Drink
+2024-01-02,Uber Ride,-15.20,Transport
+2024-01-03,Salary Deposit,2500.00,Income
+2024-01-05,Amazon Marketplace,-45.99,Shopping
+2024-01-07,Local Grocery Store,-89.12,Groceries
+2024-01-10,Netflix Subscription,-15.99,Entertainment
+2024-01-12,Shell Gas Station,-40.00,Transport
+2024-01-15,Electric Bill,-120.50,Utilities
+2024-01-20,Spotify,-9.99,Entertainment
+2024-01-25,Target Store,-102.45,Shopping
+2024-02-01,Starbucks Coffee,-6.20,Food & Drink
+2024-02-03,Salary Deposit,2500.00,Income
+2024-02-05,Whole Foods,-110.30,Groceries
+2024-02-08,Uber Ride,-18.50,Transport
+2024-02-12,Water Bill,-35.00,Utilities
+2024-02-14,Cinema Tickets,-30.00,Entertainment
+2024-02-20,Gym Membership,-50.00,Health
+2024-03-01,Starbucks Coffee,-5.50,Food & Drink
+2024-03-03,Salary Deposit,2500.00,Income
+2024-03-05,Trader Joes,-95.00,Groceries
+2024-03-10,Amazon Prime,-14.99,Shopping
+2024-03-15,Electric Bill,-115.00,Utilities

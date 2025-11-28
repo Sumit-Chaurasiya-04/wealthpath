@@ -1,0 +1,30 @@
+wealthpath/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── data/
+│   └── sample/
+│       └── sample_transactions.csv
+├── docs/
+│   ├── architecture.md
+│   └── roadmap.md
+├── notebooks/
+│   └── model_exploration.ipynb
+├── scripts/
+│   └── export_data.py
+├── src/
+│   ├── __init__.py
+│   ├── database.py
+│   ├── ml_engine.py
+│   └── utils.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_core.py
+│   └── test_ui_smoke.py
+├── app.py
+├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── Makefile
+├── README.md
+└── requirements.txt
