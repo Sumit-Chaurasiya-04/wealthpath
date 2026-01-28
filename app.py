@@ -11,16 +11,16 @@ init_db()
 ai = FinanceAI()
 
 # Sidebar
-st.sidebar.title("WealthPath 💰")
-guided_mode = st.sidebar.toggle("🎓 Guided Mode", value=True)
+st.sidebar.title("WealthPath")
+guided_mode = st.sidebar.toggle("Guided Mode", value=True)
 page = st.sidebar.radio("Navigate", ["Dashboard", "Data Import", "Transactions", "Settings"])
 
 if guided_mode:
-    st.info("💡 Guided Mode is ON. Look for these blue boxes for explanations of what's happening.")
+    st.info("Guided Mode is ON. Look for these blue boxes for explanations of what's happening.")
 
 # --- PAGE: IMPORT ---
 if page == "Data Import":
-    st.header("📥 Import Bank Data")
+    st.header("Import Bank Data")
     
     if guided_mode:
         st.markdown("""
@@ -57,7 +57,7 @@ if page == "Data Import":
             
             # Auto-Categorize with AI
             if guided_mode:
-                st.info("🤖 AI is analyzing descriptions to guess categories...")
+                st.info("AI is analyzing descriptions to guess categories...")
             
             # Attempt prediction if model exists
             clean_df = ai.predict_categories(clean_df)
@@ -67,7 +67,7 @@ if page == "Data Import":
 
 # --- PAGE: DASHBOARD ---
 elif page == "Dashboard":
-    st.header("📊 Financial Health")
+    st.header("Financial Health")
     
     df = get_transactions()
     
@@ -97,7 +97,7 @@ elif page == "Dashboard":
         c2.plotly_chart(fig_line, use_container_width=True)
         
         # AI Forecast Section
-        st.subheader("🔮 AI Cash Flow Forecast")
+        st.subheader("AI Cash Flow Forecast")
         if guided_mode:
             st.info("This chart uses Machine Learning to look at your history and predict where your balance will be in 30 days.")
             
@@ -112,7 +112,7 @@ elif page == "Dashboard":
             st.warning("Need more data points to generate a reliable forecast.")
 
         # Anomaly Section
-        st.subheader("⚠️ Detected Anomalies")
+        st.subheader("Detected Anomalies")
         anomalies = ai.detect_anomalies(df)
         if not anomalies.empty:
             st.dataframe(anomalies[['date', 'description', 'amount', 'category']])
@@ -121,7 +121,7 @@ elif page == "Dashboard":
 
 # --- PAGE: TRANSACTIONS ---
 elif page == "Transactions":
-    st.header("📝 Transaction Ledger")
+    st.header("Transaction Ledger")
     
     df = get_transactions()
     categories = get_categories()
@@ -153,7 +153,7 @@ elif page == "Transactions":
             
         # Export
         st.divider()
-        st.subheader("📤 Export")
+        st.subheader("Export")
         excel_data = convert_df_to_excel(edited_df)
         st.download_button(
             label="Download Excel File",
@@ -166,7 +166,7 @@ elif page == "Transactions":
 
 # --- PAGE: SETTINGS ---
 elif page == "Settings":
-    st.header("⚙️ Settings")
+    st.header("Settings")
     
     if st.button("Reset Database (Delete All Data)"):
         clear_db()
